@@ -28,6 +28,28 @@ function iniciarSliderAutomatico() {
 
 iniciarSliderAutomatico();
 
+slider.addEventListener('mousedown', (e) => {
+    startX = e.clientX;
+    isDragging = true;
+});
+
+slider.addEventListener('mousemove', (e) => {
+    if (isDragging) {
+        const moveX = e.clientX;
+        currentX = moveX - startX;
+    }
+});
+
+slider.addEventListener('mouseup', () => {
+    isDragging = false;
+    if (currentX < -50) {
+        moverSlide(1);
+    } else if (currentX > 50) {
+        moverSlide(-1);
+    }
+    currentX = 0;
+});
+
 slider.addEventListener('touchstart', (e) => {
     startX = e.touches[0].clientX;
     isDragging = true;
