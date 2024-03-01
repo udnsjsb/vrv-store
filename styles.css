@@ -111,3 +111,24 @@ main {
         transform: translateX(0); /* Volta à posição original */
     }
 }
+
+
+
+/*SLIDER DE IMAGENS NO COMECO DA PAGINA& */
+
+.slider-container {
+    position: relative;
+    max-width: 800px;
+    margin: auto;
+    overflow: hidden;
+}
+
+.slider {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.slide {
+    width: 100%;
+    touch-action: pan-y; /* Permitir apenas rolagem vertical no slide */
+}
