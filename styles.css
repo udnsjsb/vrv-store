@@ -2,7 +2,7 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTob9rQc9S67zoQW5FPOb1F1-94nVes-tfQpw&usqp=CAU');
+    background-color: #3B3937;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
@@ -10,6 +10,10 @@ body {
 
 h3 {
   color: #a65353;
+}
+
+s {
+  color: #00000072;
 }
 
 header {
@@ -26,8 +30,8 @@ header {
 }
 
 .logo img {
-    width: 90px;
-    height: 40px;
+    width: 100px;
+    height: 50px;
 }
 
 nav ul {
