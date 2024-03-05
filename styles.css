@@ -151,24 +151,3 @@ main {
     max-width: 100%; /* Garante que a imagem não ultrapasse a largura do contêiner */
     touch-action: pan-y; /* Permitir apenas rolagem vertical no slide */
 }
-
-
-
-.indicators {
-    display: flex;
-    justify-content: center;
-    margin-top: 10px;
-}
-
-.indicator {
-    width: 10px;
-    height: 10px;
-    border-radius: 50%;
-    background-color: #ccc;
-    margin: 0 5px; /* Espaçamento entre os indicadores */
-    transition: background-color 0.3s ease; /* Adiciona uma transição suave */
-}
-
-.indicator.active {
-    background-color: #333; /* Cor do indicador ativo */
-}

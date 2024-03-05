@@ -73,27 +73,3 @@ slider.addEventListener('touchend', () => {
 });
 
 
-
-
-document.addEventListener('DOMContentLoaded', function() {
-    const indicators = document.querySelectorAll('.indicator');
-    const images = document.querySelectorAll('.image-container img');
-    
-    indicators.forEach((indicator, index) => {
-        indicator.addEventListener('click', () => {
-            changeImage(index);
-        });
-    });
-
-    function changeImage(index) {
-        images.forEach((image, i) => {
-            if (i === index) {
-                image.style.display = 'block';
-                indicators[i].classList.add('active');
-            } else {
-                image.style.display = 'none';
-                indicators[i].classList.remove('active');
-            }
-        });
-    }
-});
