@@ -71,5 +71,3 @@ slider.addEventListener('touchend', () => {
     }
     currentX = 0;
 });
-
-
